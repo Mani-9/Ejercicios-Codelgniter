@@ -1,0 +1,22 @@
+body {
+  background-color: #d3eddc;
+  font-family: Arial, sans-serif;
+}
+.formulario {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+.customli .nav-link {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+.customli .nav-link:hover {
+  color: black;
+}

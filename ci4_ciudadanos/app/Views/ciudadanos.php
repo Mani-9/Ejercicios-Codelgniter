@@ -7,12 +7,32 @@
   <title>Ciudadanos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="../public/css/diseno.css">
+  </head>
 
 <body>
-  <div class="container">
-    <h1 class="d-flex justify-content-center p-4">Ciudadanos</h1>
-    <table class="table table-border table-striped ">
+<div class="container ">
+    <ul class="nav justify-content-center p-4 fs-3">
+      <li class="nav-item customli">
+        <a class="nav-link" href="ver_regiones">Regiones</a>
+      </li>
+      <li class="nav-item customli">
+        <a class="nav-link" href="ver_ciudadanos">Ciudadanos</a>
+      </li>
+      <li class="nav-item customli">
+        <a class="nav-link " href="ver_departamentos">Departamentos</a>
+      </li>
+      <li class="nav-item customli">
+        <a class="nav-link " href="ver_municipios">Municipios</a>
+      </li>
+      <li class="nav-item customli">
+        <a class="nav-link " href="ver_nivelesacademicos">Niveles Academicos</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container formulario">
+    <h1 class="d-flex justify-content-center p-4 ">Ciudadanos</h1>
+    <table class="table">
       <thead>
         <tr>
           <th>DPI:</th>
@@ -25,7 +45,6 @@
           <th>Fecha nacimiento:</th>
           <th>Codigo nivel academico:</th>
           <th>Codigo municipio:</th>
-          <th>contra:</th>
         </tr>
       </thead>
       <?php
@@ -62,9 +81,6 @@
           </td>
           <td>
             <?php echo $ciudadanos['cod_muni'] ?>
-          </td>
-          <td>
-            <?php echo $ciudadanos['contra'] ?>
           </td>
         </tr>
       </tbody>
