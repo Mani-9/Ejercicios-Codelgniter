@@ -9,4 +9,5 @@ class LineasTelefonicasModel extends Model
     protected $allowedFields = [
         'no_telefono', 'fecha_pago', 'meses_atraso','plan_id','cliente_id'
     ];
+    
 }

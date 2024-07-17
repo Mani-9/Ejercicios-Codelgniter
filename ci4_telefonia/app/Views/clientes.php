@@ -39,30 +39,30 @@
         </tr>
       </thead>
       <?php
-            foreach($datos as $ciudadanos ):
+            foreach($datos as $clientes ):
         ?>
       <tbody>
         <tr>
           <td>
-            <?php echo $ciudadanos['cliente_id'] ?>
+            <?php echo $clientes['cliente_id'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['apellido'] ?>
+            <?php echo $clientes['apellido'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['nombre'] ?>
+            <?php echo $clientes['nombre'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['correo_electronico'] ?>
+            <?php echo $clientes['correo_electronico'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['calle_avenida'] ?>
+            <?php echo $clientes['calle_avenida'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['no_casa'] ?>
+            <?php echo $clientes['no_casa'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['zona'] ?>
+            <?php echo $clientes['zona'] ?>
           </td>
         </tr>
       </tbody>

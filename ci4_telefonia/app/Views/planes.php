@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clientes</title>
+  <title>Planes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/css/diseno.css">
@@ -34,27 +34,30 @@
           <th>Pago mensual: </th>
           <th>Cantidad de minutos: </th>
           <th>Cantidad de mensajes: </th>
+          <th>Acciones: </th>
         </tr>
       </thead>
       <?php
-            foreach($datos as $ciudadanos ):
+            foreach($datos as $planes ):
         ?>
       <tbody>
         <tr>
           <td>
-            <?php echo $ciudadanos['plan_id'] ?>
+            <?php echo $planes['plan_id'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['nombre'] ?>
+            <?php echo $planes['nombre'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['pago_mensual'] ?>
+            <?php echo $planes['pago_mensual'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['cantidad_minutos'] ?>
+            <?php echo $planes['cantidad_minutos'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['cantidad_mensajes'] ?>
+            <?php echo $planes['cantidad_mensajes'] ?>
+          </td>
+          <td>
           </td>
         </tr>
       </tbody>

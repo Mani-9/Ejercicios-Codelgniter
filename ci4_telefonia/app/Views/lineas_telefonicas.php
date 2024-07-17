@@ -37,24 +37,24 @@
         </tr>
       </thead>
       <?php
-            foreach($datos as $ciudadanos ):
+            foreach($datos as $lineas_telefonicas ):
         ?>
       <tbody>
         <tr>
           <td>
-            <?php echo $ciudadanos['no_telefono'] ?>
+            <?php echo $lineas_telefonicas['no_telefono'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['fecha_pago'] ?>
+            <?php echo $lineas_telefonicas['fecha_pago'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['meses_atraso'] ?>
+            <?php echo $lineas_telefonicas['meses_atraso'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['plan_id'] ?>
+            <?php echo $lineas_telefonicas['plan_id'] ?>
           </td>
           <td>
-            <?php echo $ciudadanos['cliente_id'] ?>
+            <?php echo $lineas_telefonicas['cliente_id'] ?>
           </td>
         </tr>
       </tbody>
