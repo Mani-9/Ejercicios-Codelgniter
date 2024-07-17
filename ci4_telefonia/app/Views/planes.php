@@ -22,6 +22,9 @@
       <li class="nav-item customli">
         <a class="nav-link " href="ver_lineas_Telefonicas">Lineas Telefonicas</a>
       </li>
+      <li class="nav-item customli">
+      <a href="Nuevo_plan" class="nav-link">Nuevo plan</a>
+      </li>
     </ul>
   </div>
   <div class="container border border-5 formulario">
@@ -58,6 +61,7 @@
             <?php echo $planes['cantidad_mensajes'] ?>
           </td>
           <td>
+            Actualizar / Eliminar
           </td>
         </tr>
       </tbody>
