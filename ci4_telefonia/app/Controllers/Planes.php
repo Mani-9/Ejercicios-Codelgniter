@@ -26,7 +26,7 @@ class Planes extends BaseController
         $pago_mensual= $this->request->getVar('txtPagoMensual');
         $cantidad_minutos= $this->request->getVar('txtCantidadMinutos');
         $cantidad_mensajes= $this->request->getVar('txtCantidadMensajes');
-        
+
         $planes = new PlanesModel();
         $datos=[
             'plan_id'=>$id,
@@ -39,6 +39,7 @@ class Planes extends BaseController
         echo "Plan agregado";
         echo "<a href='ver_planes'>Regresar</a>";
   
+
 }
 }
 

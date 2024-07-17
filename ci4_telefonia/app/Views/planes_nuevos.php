@@ -18,7 +18,7 @@
                 <form action="agregar_plan" method="post">
                     <div class="mb-3">
                         <label for="" class="form-label">Plan Id</label>
-                        <input type="number" id="txtPlanId" name=txtPlanId"" class="form-control">
+                        <input type="number" id="txtPlanId" name="txtPlanId" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Nombre</label>
