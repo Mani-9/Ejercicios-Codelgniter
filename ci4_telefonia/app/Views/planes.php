@@ -7,11 +7,11 @@
   <title>Planes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/diseno.css">
+  <link rel="stylesheet" href="../../public/css/diseno.css">
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
     <ul class="nav justify-content-center p-4 fs-3">
       <li class="nav-item customli">
         <a class="nav-link" href="ver_clientes">Clientes</a>
@@ -23,7 +23,7 @@
         <a class="nav-link " href="ver_lineas_Telefonicas">Lineas Telefonicas</a>
       </li>
       <li class="nav-item customli">
-      <a href="Nuevo_plan" class="nav-link">Nuevo plan</a>
+        <a href="Nuevo_plan" class="nav-link">Nuevo plan</a>
       </li>
     </ul>
   </div>

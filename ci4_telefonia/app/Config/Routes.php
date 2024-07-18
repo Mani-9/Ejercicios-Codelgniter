@@ -6,8 +6,16 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('ver_clientes', 'Clientes::index');
-$routes->get('ver_lineas_Telefonicas', 'LineasTelefonicas::index');
-$routes->get('ver_planes', 'Planes::index');
-$routes->get('Nuevo_plan', 'Planes::nuevoPlan');
-$routes->post('agregar_plan', 'Planes::agregar_plan');
+$routes->get('ver_clientes', 'ClientesController::index');
+$routes->get('ver_lineas_Telefonicas', 'LineasTelefonicasController::index');
+
+$routes->get('agregar_linea_telefonica', 'LineasTelefonicasController::nuevaLineaTelefonica');
+$routes->post('agregar_linea_telefonica', 'LineasTelefonicasController::agregarLineaTelefonica');
+
+$routes->get('ver_planes', 'PlanesController::index');
+$routes->get('Nuevo_plan', 'PlanesController::nuevoPlan');
+$routes->post('agregar_plan', 'PlanesController::agregar_plan');
+
+
+$routes->post('agregar_cliente', 'ClientesController::agregarCliente');
+$routes->get('agregar_cliente', 'ClientesController::nuevoCliente');
