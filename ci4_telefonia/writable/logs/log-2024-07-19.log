@@ -1,0 +1,30 @@
+CRITICAL - 2024-07-19 17:21:41 --> ErrorException: Undefined variable $ClienteModel
+[Method: GET, Route: eliminar_cliente/1508]
+in APPPATH\Controllers\ClientesController.php on line 39.
+ 1 APPPATH\Controllers\ClientesController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ClienteModel', 'C:\\xampp\\htdocs\\fs2024\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Controllers\\ClientesController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->eliminarCliente('1508')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-19 17:22:09 --> ErrorException: Undefined variable $ClientesModel
+[Method: GET, Route: eliminar_cliente/1508]
+in APPPATH\Controllers\ClientesController.php on line 39.
+ 1 APPPATH\Controllers\ClientesController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ClientesModel', 'C:\\xampp\\htdocs\\fs2024\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Controllers\\ClientesController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->eliminarCliente('1508')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-19 17:22:34 --> ErrorException: Undefined variable $ClientesModel
+[Method: GET, Route: eliminar_cliente/1508]
+in APPPATH\Controllers\ClientesController.php on line 39.
+ 1 APPPATH\Controllers\ClientesController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ClientesModel', 'C:\\xampp\\htdocs\\fs2024\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Controllers\\ClientesController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->eliminarCliente('1508')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

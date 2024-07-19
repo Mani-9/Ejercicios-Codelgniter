@@ -6,6 +6,7 @@ use CodeIgniter\Model;
 class LineasTelefonicasModel extends Model
 {
     protected $table='lineas_telefonicas';
+    protected $primaryKey = 'cliente_id';
     protected $allowedFields = [
         'no_telefono', 
         'fecha_pago',

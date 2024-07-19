@@ -33,4 +33,11 @@ class ClientesController extends BaseController
     {
         return view('clientes_nuevos');
     }
+    public function eliminarCliente($id=null)
+    {
+        //echo $id;
+        $clientes = new ClientesModel();
+        $clientes->delete(['cliente_id'=>$id]);
+        return redirect()->route('ver_clientes');
+    }
 }

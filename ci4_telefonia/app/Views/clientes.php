@@ -7,7 +7,7 @@
   <title>Clientes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/css/diseno.css">
+
 </head>
 
 <body>
@@ -33,12 +33,10 @@
       <thead>
         <tr>
           <th>ID Cliente: </th>
-          <th>Apellido: </th>
-          <th>Nombre:</th>
+          <th>Nombre Completo: </th>
           <th>Correo electronico: </th>
-          <th>Calle y avenida: </th>
-          <th>Numero de casa:</th>
-          <th>Zona:</th>
+          <th>Direccion: </th>
+          <th>Acciones: </th>
         </tr>
       </thead>
       <?php
@@ -50,23 +48,21 @@
             <?php echo $clientes['cliente_id'] ?>
           </td>
           <td>
-            <?php echo $clientes['apellido'] ?>
-          </td>
-          <td>
-            <?php echo $clientes['nombre'] ?>
+            <?php echo $clientes['nombre'] ." " .$clientes['apellido']?>
           </td>
           <td>
             <?php echo $clientes['correo_electronico'] ?>
           </td>
           <td>
-            <?php echo $clientes['calle_avenida'] ?>
-          </td>
-          <td>
-            <?php echo $clientes['no_casa'] ?>
-          </td>
-          <td>
-            <?php echo $clientes['zona'] ?>
-          </td>
+            <?php echo $clientes['calle_avenida']. " "
+            .$clientes['no_casa'] . " zona "
+            .$clientes['zona']
+            ?>
+            </td>
+            <td>
+           <a href="" class="btn btn-info">Actualizar</a>
+           <a href="eliminar_cliente/<?php echo $clientes['cliente_id']?>" class="btn btn-danger">Eliminar</a>
+            </td> 
         </tr>
       </tbody>
       <?php
