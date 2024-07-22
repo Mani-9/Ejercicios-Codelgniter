@@ -28,6 +28,9 @@
       <li class="nav-item customli">
         <a class="nav-link " href="ver_nivelesacademicos">Niveles Academicos</a>
       </li>
+      <li class="nav-item customli">
+        <a class="nav-link " href="crearCiudadano">crear Ciudadano</a>
+      </li>
     </ul>
   </div>
   <div class="container formulario">

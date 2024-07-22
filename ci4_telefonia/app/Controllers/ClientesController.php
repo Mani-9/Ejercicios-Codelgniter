@@ -38,6 +38,6 @@ class ClientesController extends BaseController
         //echo $id;
         $clientes = new ClientesModel();
         $clientes->delete(['cliente_id'=>$id]);
-        return redirect()->route('ver_clientes');
+        return redirect()->route('ver_clientes');   
     }
 }

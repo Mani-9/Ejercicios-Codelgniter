@@ -13,15 +13,16 @@
 <body>
 <div class="container">
     <ul class="nav justify-content-center p-4 fs-3">
+    <li class="nav-item nav-mod">
+        <a class="nav-link navmod" href="ver_menu">Menu Principal</a>
+      </li>
       <li class="nav-item customli">
         <a class="nav-link" href="ver_clientes">Clientes</a>
       </li>
       <li class="nav-item customli">
         <a class="nav-link" href="ver_planes">Planes</a>
       </li>
-      <li class="nav-item customli">
-        <a class="nav-link " href="ver_lineas_Telefonicas">Lineas Telefonicas</a>
-      </li>
+      
       <li class="nav-item customli">
         <a class="nav-link " href="agregar_linea_telefonica">Agregar Lineas Telefonicas</a>
       </li>
@@ -37,6 +38,7 @@
           <th>Meses atrasados:</th>
           <th>Id plan: </th>
           <th>Id cliente: </th>
+          <th>Acciones: </th>
         </tr>
       </thead>
       <?php
@@ -58,6 +60,10 @@
           </td>
           <td>
             <?php echo $lineas_telefonicas['cliente_id'] ?>
+          </td>
+          <td>
+            <a href="" class="btn btn-info">Actualizar</a>
+             <a href="eliminar_linea_telefonica/<?php echo $lineas_telefonicas['no_telefono']; ?>" class="btn btn-danger">Eliminar</a>
           </td>
         </tr>
       </tbody>

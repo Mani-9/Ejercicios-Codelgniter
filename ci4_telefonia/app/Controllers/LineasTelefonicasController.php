@@ -32,5 +32,11 @@ class LineasTelefonicasController extends BaseController
     {
         return view('lineaTelefonicaNueva');  
     }
+    public function eliminarLineaTelefonica($id=null){
+     
+        $lineas_Telefonicas = new LineasTelefonicasModel();
+        $lineas_Telefonicas->delete(['no_telefono'=>$id]);
+        return redirect()->route('ver_lineas_Telefonicas');
+    }
 }
 
