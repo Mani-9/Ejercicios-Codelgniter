@@ -1,24 +1,17 @@
 body {
-    background-color: #d3eddc; /* Verde claro */
+    background-color: #d3eddc;
     font-family: Arial, sans-serif;
-    font-size: 25px;
 }
-
 .modcontainer {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #008080; 
-    color: #EECEB9;
+    color: white;
 }
-
-h2 {
-    text-align: center;
-}
-
 .navmod {
     background-color: #008080; 
-    color: #EECEB9;
+    color: white;
     font-size: 25px;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -32,6 +25,6 @@ h2 {
 .navmod:hover {
     color: #EECEB9; /* Color dorado para el hover */
 }
-p {
-    text-align: center;
+p{
+    color: white;
 }

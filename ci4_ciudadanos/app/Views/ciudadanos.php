@@ -17,9 +17,6 @@
         <a class="nav-link" href="ver_regiones">Regiones</a>
       </li>
       <li class="nav-item customli">
-        <a class="nav-link" href="ver_ciudadanos">Ciudadanos</a>
-      </li>
-      <li class="nav-item customli">
         <a class="nav-link " href="ver_departamentos">Departamentos</a>
       </li>
       <li class="nav-item customli">

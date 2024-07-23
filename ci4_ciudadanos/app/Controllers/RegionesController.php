@@ -27,9 +27,9 @@ class RegionesController extends BaseController
     public function nuevaRegion(): string{
         return view('agregarRegiones');
     }
-    public function eliminarRegion($cod_region = null):string{
+    public function eliminarRegion($cod_region = null){
         $region =new RegionesModel();
-        $regiones->delete(['cod_region'=>$cod_region]);
+        $region->delete(['cod_region'=>$cod_region]);
         return redirect()->route('ver_regiones');
     } 
 }

@@ -28,9 +28,9 @@ class NivelesAcademicosController extends BaseController
     public function nuevoNivelAcademico(): string{
         return view('agregarNivelesAcademicos');
     }
-    public funtion eliminarNivelAcademico($id=null):string{
+    public function eliminarNivelAcademico($id=null){
         $nivelesAcademicos = new NivelesAcademicosModel();
-        $nivelesAcademicos->delete(['cod_nivel_acad'=>$id]) 
+        $nivelesAcademicos->delete(['cod_nivel_acad'=>$id]); 
         return redirect()->route('ver_nivelesacademicos'); 
     }
    

@@ -19,9 +19,6 @@
         <a class="nav-link" href="ver_ciudadanos">Ciudadanos</a>
       </li>
       <li class="nav-item customli">
-        <a class="nav-link " href="ver_departamentos">Departamentos</a>
-      </li>
-      <li class="nav-item customli">
         <a class="nav-link " href="ver_municipios">Municipios</a>
       </li>
       <li class="nav-item customli">

@@ -7,27 +7,38 @@
   <title>Clientes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../public/css/clientes.css">
-  <link rel="stylesheet" href="../../public/css/clientes.css">
+    <link rel="stylesheet" href="../../public/css/diseno.css">
+    <link rel="stylesheet" href="../public/css/diseno.css">
 </head>
 
 <body>
-  <div class="container ">
-    <ul class="nav justify-content-center p-4 fs-3 modcontainer">
-      <li class="nav-item nav-mod">
-        <a class="nav-link navmod" href="ver_menu">Menu Principal</a>
-      </li>
-      <li class="nav-item nav-mod">
-        <a class="nav-link navmod" href="ver_planes">Planes</a>
-      </li>
-      <li class="nav-item nav-mod">
-        <a class="nav-link navmod" href="ver_lineas_Telefonicas">Lineas Telefonicas</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link navmod" href="agregar_cliente">Agregar Cliente</a>
-      </li>
-    </ul>
+<header>
+  <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <div class="bg-dark p-4">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="<?= base_url('ver_menu')?>">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="<?= base_url('ver_clientes')?>">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="<?= base_url('ver_lineas_Telefonicas')?>">Lineas Telefonicas</a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <p class="mb-0 text-white"><i class="bi bi-database"></i> Base de datos <br> telefonía</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
   <div class="container p-4">
      <div class="row justify-content-center">
        <h2 class="d-flex justify-content-center p-2 modcontainer col-4">Clientes</h2>

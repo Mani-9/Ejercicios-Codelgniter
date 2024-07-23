@@ -13,9 +13,6 @@
 <div class="container">
     <ul class="nav justify-content-center p-4 fs-3">
       <li class="nav-item customli">
-        <a class="nav-link" href="ver_regiones">Regiones</a>
-      </li>
-      <li class="nav-item customli">
         <a class="nav-link" href="ver_ciudadanos">Ciudadanos</a>
       </li>
       <li class="nav-item customli">

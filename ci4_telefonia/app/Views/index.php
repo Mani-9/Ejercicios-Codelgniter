@@ -7,34 +7,35 @@
     <title>Menu CI4 telefonia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../public/css/index.css ">
     <link rel="stylesheet" href="../../public/css/index.css">
 </head>
 
 <body>
+    <header class="p-4 modcontainer">
+        <ul class="nav nav-underline justify-content-center">
+            <li class="nav-item nav-mod">
+                <a class="nav-link navmod" href="ver_clientes">Clientes</a>
+            </li>
+            <li class="nav-item nav-mod">
+                <a class="nav-link navmod" href="ver_lineas_Telefonicas">Líneas Telefónicas</a>
+            </li>
+            <li class="nav-item nav-mod">
+                <a class="nav-link navmod" href="ver_planes">Planes</a>
+            </li>
+        </ul>
+    </header>
     <div class="container p-4">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
-                <header class="p-4 modcontainer">
-                    <h2>Base de Datos Telefonía</h2>
-                </header>
-                <main class="modcontainer">
-                    <ul class="nav nav-underline justify-content-center">
-                        <li class="nav-item nav-mod">
-                            <a class="nav-link navmod" href="ver_clientes">Clientes</a>
-                        </li>
-                        <li class="nav-item nav-mod">
-                            <a class="nav-link navmod" href="ver_lineas_Telefonicas">Líneas Telefónicas</a>
-                        </li>
-                        <li class="nav-item nav-mod">
-                            <a class="nav-link navmod" href="ver_planes">Planes</a>
-                        </li>
-                    </ul>
+                <main class="">
+                    <p><i class="bi bi-database"></i> Base de datos telefonía</p>
                 </main>
             </div>
         </div>
     </div>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

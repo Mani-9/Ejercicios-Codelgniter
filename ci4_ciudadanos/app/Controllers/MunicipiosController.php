@@ -27,9 +27,9 @@ class MunicipiosController extends BaseController
     public function nuevosMunicipios():string{
         return view('agregarMunicipio');
     }
-    public function eliminarMunicipio($id=null):string{
+    public function eliminarMunicipio($id=null){
         $municipios = new MunicipiosModel();
         $municipios->delete(['cod_muni'=>$id]);
-        return redirect()->return('ver_municipios');
+        return redirect()->route('ver_municipios');
     }
 }

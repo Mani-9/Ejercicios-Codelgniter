@@ -7,32 +7,50 @@
   <title>Lineas_Telefonicas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/clientes.css">
-  <link rel="stylesheet" href="../../public/css/clientes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../public/css/diseno.css">
+  <link rel="stylesheet" href="../public/css/diseno.css">
 </head>
 
 <body>
-<div class="container">
-    <ul class="nav justify-content-center p-4 fs-3 modcontainer">
-    <li class="nav-item nav-mod">
-        <a class="nav-link navmod" href="ver_menu">Menu Principal</a>
-      </li>
-      <li class="nav-item customli">
-        <a class="nav-link navmod" href="ver_clientes">Clientes</a>
-      </li>
-      <li class="nav-item customli">
-        <a class="nav-link navmod" href="ver_planes">Planes</a>
-      </li>
-      
-      <li class="nav-item customli">
-        <a class="nav-link navmod" href="agregar_linea_telefonica">Agregar Lineas Telefonicas</a>
-      </li>
-    </ul>
-  </div>
-  <div class="container border border-5 formulario">
-    <h2 class="d-flex justify-content-center p-2 modcontainer col-4">Lineas Telefonicas</h2>
-    <table class="table table-success table-striped border border-dark">
-      <thead class="table-dark">
+<header>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark p-4">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="<?= base_url('ver_menu')?>"><i class="bi bi-menu-app-fill"></i>
+              Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="<?= base_url('ver_clientes')?>"><i class="bi bi-person-vcard"></i>
+              Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="<?= base_url('ver_planes')?>"><i class="bi bi-pip"></i> Planes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <p class="mb-0 text-white"><i class="bi bi-database"></i> Base de datos telefonía</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container border border-5 ">
+    <div class="row justify-content-center">
+     <h2 class="d-flex justify-content-center p-2  col-12 col-md-6 col-lg-4">Lineas Telefonicas</h2>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-success table-striped border border-dark">
+        <thead class="table-dark">
         <tr>
           <th>Numero de telefono: </th>
           <th>Fecha de pago: </th>
@@ -64,7 +82,8 @@
           </td>
           <td>
             <a href="" class="btn btn-info">Actualizar</a>
-             <a href="eliminar_linea_telefonica/<?php echo $lineas_telefonicas['no_telefono']; ?>" class="btn btn-danger">Eliminar</a>
+            <a href="eliminar_linea_telefonica/<?php echo $lineas_telefonicas['no_telefono']; ?>"
+              class="btn btn-danger">Eliminar</a>
           </td>
         </tr>
       </tbody>
@@ -72,6 +91,7 @@
         endforeach;
         ?>
     </table>
+  </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

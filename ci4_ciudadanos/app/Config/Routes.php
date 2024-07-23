@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('ver_menu', 'Home::index');
 
 //regiones
 $routes->get('ver_regiones', 'RegionesController::index');
@@ -29,7 +29,7 @@ $routes->get('eliminar_ciudadano/(:num)', 'CiudadanosController::eliminarCiudada
 $routes->get('ver_departamentos', 'DepartamentosController::index');
 $routes->get('crearDepartamento', 'DepartamentosController::nuevosDepartamentos');
 $routes->post('crearDepartamento', 'DepartamentosController::agregarDepartamentos');
-$routes->get('eliminar_departamentos/(:num)', 'DepartamentosControlle::eliminarDepartamento/$1');
+$routes->get('eliminar_departamentos/(:num)', 'DepartamentosController::eliminarDepartamento/$1');
 
 //municipios
 $routes->get('ver_municipios', 'MunicipiosController::index');

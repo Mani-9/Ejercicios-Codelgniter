@@ -20,14 +20,8 @@ class PlanesController extends BaseController
 
     public function agregar_plan()
     {
-        $id = $this->request->getVar('txtPlanId');
-        $nombre = $this->request->getVar('txtNombre');
-        $pago_mensual = $this->request->getVar('txtPagoMensual');
-        $cantidad_minutos = $this->request->getVar('txtCantidadMinutos');
-        $cantidad_mensajes = $this->request->getVar('txtCantidadMensajes');
-        
         $planes = new PlanesModel();
-
+    
         $datos = [
             'plan_id' => $this->request->getVar('txtPlanId'),
             'nombre' => $this->request->getVar('txtNombre'),
@@ -35,14 +29,33 @@ class PlanesController extends BaseController
             'cantidad_minutos' => $this->request->getVar('txtCantidadMinutos'),
             'cantidad_mensajes' => $this->request->getVar('txtCantidadMensajes')
         ];
-
+    
         $planes->insert($datos);
         echo "Datos guardados";
         return redirect()->route('ver_planes');
     }
+    
     public function eliminarPlan($id=null){
         $planes = new PlanesModel();
         $planes->delete(['plan_id'=>$id]);
+        return redirect()->route('ver_planes');
+    }
+    public function buscarPlan($id=null){
+        $planes = new PlanesModel();
+        $datos['datos'] = $planes->where('plan_id', $id)->first();
+        return view('formModificarPlan', $datos);
+    }
+    public function modificarPlan(){
+        
+        $datos = [
+            'plan_id' => $this->request->getVar('txtPlanId'),
+            'nombre' => $this->request->getVar('txtNombre'),
+            'pago_mensual' => $this->request->getVar('txtPagoMensual'),
+            'cantidad_minutos' => $this->request->getVar('txtCantidadMinutos'),
+            'cantidad_mensajes' => $this->request->getVar('txtCantidadMensajes')
+        ];
+        $planes = new PlanesModel();
+        $planes->update($datos['plan_id'], $datos);
         return redirect()->route('ver_planes');
     }
 }
