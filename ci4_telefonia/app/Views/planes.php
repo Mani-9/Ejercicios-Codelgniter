@@ -61,7 +61,8 @@
             <?php echo $planes['cantidad_mensajes'] ?>
           </td>
           <td>
-            Actualizar / Eliminar
+            <a href="" class="btn btn-info">Actualizar</a>
+            <a href="eliminar_plan/<?php echo $planes['plan_id']?>" class="btn btn-danger">Eliminar</a>
           </td>
         </tr>
       </tbody>

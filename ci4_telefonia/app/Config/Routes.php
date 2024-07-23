@@ -17,6 +17,7 @@ $routes->get('eliminar_linea_telefonica/(:num)', 'LineasTelefonicasController::e
 $routes->get('ver_planes', 'PlanesController::index');
 $routes->get('Nuevo_plan', 'PlanesController::nuevoPlan');
 $routes->post('agregar_plan', 'PlanesController::agregar_plan');
+$routes->get('eliminar_plan/(:num)', 'PlanesController::eliminarPlan/$1');
 
 //Clientes
 $routes->get('ver_clientes', 'ClientesController::index');
