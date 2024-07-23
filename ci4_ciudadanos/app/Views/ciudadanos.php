@@ -86,6 +86,10 @@
             <?php echo $ciudadanos['cod_muni'] ?>
           </td>
         </tr>
+        <td>
+            <a href="" class="btn btn-info">Actualizar</a>
+            <a href="eliminar_ciudadano/<?php echo $ciudadanos['dpi']?>" class="btn btn-danger">Eliminar</a>
+          </td>
       </tbody>
       <?php
         endforeach;

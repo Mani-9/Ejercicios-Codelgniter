@@ -26,5 +26,10 @@ class DepartamentosController extends BaseController
     public function nuevosDepartamentos():string{
         return view('agregarDepartamentos');
     }
+    public function eliminarDepartamento($id=null):string{
+        $departamentos = new DepartamentosModel();
+        $departamentos->delete(['code_depto'=>$id]);
+        return redirect()->route('ver_departamentos'); 
+    }
 }
 

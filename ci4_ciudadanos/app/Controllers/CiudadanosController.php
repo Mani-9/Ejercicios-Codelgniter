@@ -34,4 +34,9 @@ class CiudadanosController extends BaseController
     public function nuevosCiudadanos():string{
         return view('agregarCiudadanos');
     }
+    public function eliminarCiudadano($id=null):string{
+        $ciudadanos = new CiudadanosModel();
+        $ciudadanos->delete(['dpi'=>$id]);
+        return redirect()->route('ver_ciudadanos');
+    }
 }

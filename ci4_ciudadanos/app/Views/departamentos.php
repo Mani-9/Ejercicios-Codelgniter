@@ -56,6 +56,10 @@
           <td>
             <?php echo $departamentos['cod_region'] ?>
           </td>
+          <td>
+            <a href="" class="btn btn-info">Actualizar</a>
+            <a href="eliminar_departamentos/<?php echo $departamentos['cod_depto']?>" class="btn btn-danger">Eliminar</a>
+          </td>
         </tr>
       </tbody>
       <?php

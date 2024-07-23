@@ -39,7 +39,8 @@
         <tr>
           <th>Código:</th>
           <th>Nombre:</th>
-          <th>Descripción</th>
+          <th>Descripción:</th>
+          <th>Acciones:</th>
         </tr>
       </thead>
       <?php
@@ -55,6 +56,10 @@
           </td>
           <td>
             <?php echo $region['descripcion'] ?>
+          </td>
+          <td>
+            <a href="" class="btn btn-info">Actualizar</a>
+            <a href="eliminar_Region/<?php echo $region['cod_region']?>" class="btn btn-danger">Eliminar</a>
           </td>
         </tr>
       </tbody>

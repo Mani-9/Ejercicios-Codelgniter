@@ -44,18 +44,22 @@
         </tr>
       </thead>
       <?php
-            foreach($datos as $departamentos ):
+            foreach($datos as $municipios ):
         ?>
       <tbody>
         <tr>
           <td>
-            <?php echo $departamentos['cod_muni'] ?>
+            <?php echo $municipios['cod_muni'] ?>
           </td>
           <td>
-            <?php echo $departamentos['nombre_municipio'] ?>
+            <?php echo $municipios['nombre_municipio'] ?>
           </td>
           <td>
-            <?php echo $departamentos['cod_depto'] ?>
+            <?php echo $municipios['cod_depto'] ?>
+          </td>
+          <td>
+            <a href="" class="btn btn-info">Actualizar</a>
+            <a href="eliminar_municipios/<?php echo $municipios['cod_muni']?>" class="btn btn-danger">Eliminar</a>
           </td>
         </tr>
       </tbody>
