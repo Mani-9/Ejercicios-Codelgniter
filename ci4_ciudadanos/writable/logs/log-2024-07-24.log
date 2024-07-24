@@ -1,0 +1,528 @@
+ERROR - 2024-07-24 04:37:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:37:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:39:04 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:39:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_nivelesacademicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nivelesacademicos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:41:00 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:41:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:42:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:42:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:45:27 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:45:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_nivelesacademicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nivelesacademicos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:45:31 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\DepartamentosController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\DepartamentosController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartamentosController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\DepartamentosController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\DepartamentosController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartamentosController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:45:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_departamentos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `departamentos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DepartamentosController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DepartamentosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DepartamentosController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:48:17 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:48:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:50:13 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:50:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:51:28 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\MunicipiosController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\MunicipiosController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MunicipiosController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\MunicipiosController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\MunicipiosController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MunicipiosController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:51:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_municipios]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `municipios`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MunicipiosController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MunicipiosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MunicipiosController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:52:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:52:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_nivelesacademicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nivelesacademicos`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\NivelesAcademicosController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\NivelesAcademicosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NivelesAcademicosController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-24 04:53:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2024_dml', 3306, '', 0)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2024_dml' in C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\app\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+#7 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+#8 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\Ejercicios-Codelgniter\Ejercicios-Codelgniter\ci4_ciudadanos\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-24 04:53:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2024_dml'
+[Method: GET, Route: ver_regiones]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `regiones`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegionesController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RegionesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

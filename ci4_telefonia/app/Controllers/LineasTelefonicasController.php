@@ -38,5 +38,24 @@ class LineasTelefonicasController extends BaseController
         $lineas_Telefonicas->delete(['no_telefono'=>$id]);
         return redirect()->route('ver_lineas_Telefonicas');
     }
+    public function buscarLineaTelefonica($id=null)
+    {
+        $lineas_Telefonicas = new LineasTelefonicasModel();
+        $datos['datos'] = $lineas_Telefonicas->where('no_telefono', $id)->first();
+        return view('formModificarLineasTelefonicas', $datos);
+    }
+    public function modificarLineaTelefonica()
+    {
+        $datos = [
+            'no_telefono' => $this->request->getVar('txtNumeroTelefono'),
+            'fecha_pago' => $this->request->getVar('txtFechaPago'),
+            'meses_atraso' => $this->request->getVar('txtMesesAtrasados'),
+            'plan_id' => $this->request->getVar('txtIdPlan'),
+            'cliente_id' => $this->request->getVar('txtIdCliente')
+        ];
+        $lineas_Telefonicas = new LineasTelefonicasModel();
+        $lineas_Telefonicas->update($datos['no_telefono'], $datos);
+        return redirect()->route('ver_lineas_Telefonicas');
+    }  
 }
 

@@ -49,7 +49,6 @@
   <main class="container formulario p-2">
     <div class="d-flex justify-content-center ">
       <h1 class="p-2 col-12 col-md-6 col-lg-4 text-center">Planes telefónicos</h1>
-
     </div>
     <div class="d-flex justify-content-end ">
       <a href="<?php echo base_url('Nuevo_plan'); ?>" class="btn btn-dark col-12 col-md-6 col-lg-4 mt-2 m-2">

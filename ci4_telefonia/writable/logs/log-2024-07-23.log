@@ -310,3 +310,45 @@ in APPPATH\Controllers\Home.php on line 9.
  5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 23:03:20 --> ErrorException: Undefined variable $planes
+[Method: GET, Route: ver_clientes]
+in APPPATH\Views\clientes.php on line 89.
+ 1 APPPATH\Views\clientes.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $planes', 'C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\ClientesController.php(13): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 23:04:01 --> ErrorException: Undefined array key "plan_id"
+[Method: GET, Route: ver_clientes]
+in APPPATH\Views\clientes.php on line 89.
+ 1 APPPATH\Views\clientes.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_id"', 'C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\ClientesController.php(13): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 23:05:14 --> ErrorException: Undefined array key "plan_id"
+[Method: GET, Route: ver_clientes]
+in APPPATH\Views\clientes.php on line 89.
+ 1 APPPATH\Views\clientes.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "plan_id"', 'C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php', 89)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\Ejercicios-Codelgniter\\Ejercicios-Codelgniter\\ci4_telefonia\\app\\Views\\clientes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('clientes', [], true)
+ 5 APPPATH\Controllers\ClientesController.php(13): view('clientes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClientesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClientesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
